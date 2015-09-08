@@ -1,0 +1,5 @@
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.dll
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.pdb
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Debug\PhamacyDB.dll
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Debug\PhamacyDB.pdb

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="D:\CSD\PANOS\PROJECT\PHAMACYDB\PHAMACYDB\APP_DATA\DATABASE.MDF" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLSERVER;AttachDbFilename=|DataDirectory|Database.mdf;Integrated Security=True;User Instance=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DatabaseConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="categoryName" Type="System.String" DbType="NChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Category_SubCategory" Member="SubCategories" ThisKey="categoryName" OtherKey="categoryName" Type="SubCategory" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InteractionPharmacyPharmacy" Member="InteractionPharmacyPharmacies">
+    <Type Name="InteractionPharmacyPharmacy">
+      <Column Name="pharmacyname1" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="pharmacyname2" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="comment" Type="System.String" DbType="NText NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="PharmacyChemical_InteractionPharmacyPharmacy" Member="PharmacyChemical" ThisKey="pharmacyname1" OtherKey="chemicalName" Type="PharmacyChemical" IsForeignKey="true" />
+      <Association Name="PharmacyChemical_InteractionPharmacyPharmacy1" Member="PharmacyChemical1" ThisKey="pharmacyname2" OtherKey="chemicalName" Type="PharmacyChemical" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InteractionPharmacySubCategory" Member="InteractionPharmacySubCategories">
+    <Type Name="InteractionPharmacySubCategory">
+      <Column Name="chemicalName" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subCategoryName" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="comment" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="PharmacyChemical_InteractionPharmacySubCategory" Member="PharmacyChemical" ThisKey="chemicalName" OtherKey="chemicalName" Type="PharmacyChemical" IsForeignKey="true" />
+      <Association Name="SubCategory_InteractionPharmacySubCategory" Member="SubCategory" ThisKey="subCategoryName" OtherKey="subCategoryName" Type="SubCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PharmacyChemical" Member="PharmacyChemicals">
+    <Type Name="PharmacyChemical">
+      <Column Name="chemicalName" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="greekName" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="indication" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="contraIndication" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="undesirableReactions" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dose" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="interactionGeneral" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="subCategoryName" Type="System.String" DbType="NChar(350) NOT NULL" CanBeNull="false" />
+      <Association Name="PharmacyChemical_InteractionPharmacyPharmacy" Member="InteractionPharmacyPharmacies" ThisKey="chemicalName" OtherKey="pharmacyname1" Type="InteractionPharmacyPharmacy" />
+      <Association Name="PharmacyChemical_InteractionPharmacyPharmacy1" Member="InteractionPharmacyPharmacies1" ThisKey="chemicalName" OtherKey="pharmacyname2" Type="InteractionPharmacyPharmacy" />
+      <Association Name="PharmacyChemical_InteractionPharmacySubCategory" Member="InteractionPharmacySubCategories" ThisKey="chemicalName" OtherKey="chemicalName" Type="InteractionPharmacySubCategory" />
+      <Association Name="PharmacyChemical_PharmacyCommercial" Member="PharmacyCommercials" ThisKey="chemicalName" OtherKey="chemicalName" Type="PharmacyCommercial" />
+      <Association Name="SubCategory_PharmacyChemical" Member="SubCategory" ThisKey="subCategoryName" OtherKey="subCategoryName" Type="SubCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PharmacyCommercial" Member="PharmacyCommercials">
+    <Type Name="PharmacyCommercial">
+      <Column Name="chemicalName" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="company" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="morph" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="PharmacyChemical_PharmacyCommercial" Member="PharmacyChemical" ThisKey="chemicalName" OtherKey="chemicalName" Type="PharmacyChemical" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubCategory" Member="SubCategories">
+    <Type Name="SubCategory">
+      <Column Name="subCategoryName" Type="System.String" DbType="NChar(350) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="categoryName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="SubCategory_InteractionPharmacySubCategory" Member="InteractionPharmacySubCategories" ThisKey="subCategoryName" OtherKey="subCategoryName" Type="InteractionPharmacySubCategory" />
+      <Association Name="SubCategory_PharmacyChemical" Member="PharmacyChemicals" ThisKey="subCategoryName" OtherKey="subCategoryName" Type="PharmacyChemical" />
+      <Association Name="Category_SubCategory" Member="Category" ThisKey="categoryName" OtherKey="categoryName" Type="Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

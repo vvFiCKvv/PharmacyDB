@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="Database">
+  <DataContextMoniker Name="/DatabaseDataContext" />
+  <nestedChildShapes>
+    <classShape Id="aa335ff9-2711-47dc-b667-68b3ea80cfd2" absoluteBounds="0.75, 3.5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/DatabaseDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7c2beed1-6811-4e48-9216-5bb4b59a9e60" absoluteBounds="0.765, 3.96, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8dec344-446c-4925-bbd8-28afb39172a0" absoluteBounds="3.5, 3.5, 2, 1.193992513020834">
+      <DataClassMoniker Name="/DatabaseDataContext/SubCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0fb73bea-faa5-4d4a-b71c-1a17b7a1f449" absoluteBounds="3.515, 3.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba14ce02-8b8b-44e4-9304-2b29abc2fba2" absoluteBounds="9, 4.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DatabaseDataContext/InteractionPharmacyPharmacy" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92b8b5e7-2c13-4b4b-a4a9-c6b9f456d8cb" absoluteBounds="9.015, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90318426-2fe5-4677-bc42-37124ee9e8dc" absoluteBounds="9, 1.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DatabaseDataContext/InteractionPharmacySubCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="834faedd-ddc2-4a00-b847-eae960f7584a" absoluteBounds="9.015, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" absoluteBounds="6.25, 5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/DatabaseDataContext/PharmacyChemical" />
+      <nestedChildShapes>
+        <elementListCompartment Id="40f8d6c4-127c-4dc0-a041-0da4e2502369" absoluteBounds="6.265, 5.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62c7536f-5cc8-4714-9d67-e408bf09f791" absoluteBounds="9, 6.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DatabaseDataContext/PharmacyCommercial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6712651-71d5-4970-8983-eeb0375d0e7c" absoluteBounds="9.015, 6.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 4.00084554036458); (3.5 : 4.00084554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/Category/Category_SubCategory" />
+      <nodes>
+        <classShapeMoniker Id="aa335ff9-2711-47dc-b667-68b3ea80cfd2" />
+        <classShapeMoniker Id="b8dec344-446c-4925-bbd8-28afb39172a0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.5); (4.5 : 2.44314697265625); (9 : 2.44314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/SubCategory/SubCategory_InteractionPharmacySubCategory" />
+      <nodes>
+        <classShapeMoniker Id="b8dec344-446c-4925-bbd8-28afb39172a0" />
+        <classShapeMoniker Id="90318426-2fe5-4677-bc42-37124ee9e8dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 5.38064697265625); (9 : 5.38064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/PharmacyChemical/PharmacyChemical_InteractionPharmacyPharmacy" />
+      <nodes>
+        <classShapeMoniker Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" />
+        <classShapeMoniker Id="ba14ce02-8b8b-44e4-9304-2b29abc2fba2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 5.12782348632813); (9 : 5.12782348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/PharmacyChemical/PharmacyChemical_InteractionPharmacyPharmacy1" />
+      <nodes>
+        <classShapeMoniker Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" />
+        <classShapeMoniker Id="ba14ce02-8b8b-44e4-9304-2b29abc2fba2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 5); (7.25 : 2.82097295898438); (9 : 2.82097295898438)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/PharmacyChemical/PharmacyChemical_InteractionPharmacySubCategory" />
+      <nodes>
+        <classShapeMoniker Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" />
+        <classShapeMoniker Id="90318426-2fe5-4677-bc42-37124ee9e8dc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.09699625651042); (6.7187475 : 4.09699625651042); (6.7187475 : 5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/SubCategory/SubCategory_PharmacyChemical" />
+      <nodes>
+        <classShapeMoniker Id="b8dec344-446c-4925-bbd8-28afb39172a0" />
+        <classShapeMoniker Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 6.92390055338542); (9 : 6.92390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DatabaseDataContext/PharmacyChemical/PharmacyChemical_PharmacyCommercial" />
+      <nodes>
+        <classShapeMoniker Id="db3522fa-abcf-4b80-a42f-efd59ccd2562" />
+        <classShapeMoniker Id="62c7536f-5cc8-4714-9d67-e408bf09f791" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

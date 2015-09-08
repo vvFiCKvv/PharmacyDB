@@ -1,0 +1,17 @@
+F:\windows safe\Documents\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.dll
+F:\windows safe\Documents\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.pdb
+F:\windows safe\Documents\Documents\diplomatiki\PhamacyDB\obj\Release\ResolveAssemblyReference.cache
+F:\windows safe\Documents\Documents\diplomatiki\PhamacyDB\obj\Release\PhamacyDB.dll
+F:\windows safe\Documents\Documents\diplomatiki\PhamacyDB\obj\Release\PhamacyDB.pdb
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.dll
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\bin\PhamacyDB.pdb
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Release\PhamacyDB.dll
+C:\Users\Panos\Documents\diplomatiki\PhamacyDB\obj\Release\PhamacyDB.pdb
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\obj\Release\ResolveAssemblyReference.cache
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\bin\PhamacyDB.dll
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\bin\PhamacyDB.pdb
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\bin\chartDataLayer.dll
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\bin\netchartdir.dll
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\obj\Release\PhamacyDB.dll
+D:\Csd\CurrentProjects\PhamacyDB\PhamacyDB\obj\Release\PhamacyDB.pdb

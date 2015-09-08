@@ -1,0 +1,266 @@
+﻿body {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #000000;
+	margin-left:1%;
+	margin-top:0px;
+	width:98%;
+	text-align:center;
+			
+}
+html
+{
+	background-color: #BBDBCC;
+	border: none; 
+	
+}
+div
+{
+
+  background-color: #BBDBCC;
+  /* for IE */
+  filter:alpha(opacity=96);
+  /* CSS3 standard */
+  opacity:0.96;
+  text-align:left;
+}
+form
+{
+
+	background-image:url(/images/Pharmacy_Logo_for_web.gif);
+	background-position:center;
+	background-attachment:scroll;
+	background-repeat:repeat-y;
+
+
+	margin-left:10.2%;
+	margin-right:9.4%;
+	
+}
+table 
+{
+
+	border-color : Black;
+	
+}
+td, tr
+{
+	color: #000000;
+	background-color : #AACBCC;
+	border-color : Black;
+	
+}
+th {
+	color: #000000;
+	text-align: center;
+	background-color : #AAABCC;
+	border-color : Black;
+}
+frameset
+{
+	border-style:	solid;
+	border-color:	#000000;
+	border-width:	1px;
+}
+
+
+ br{
+	line-height: 15px;
+}
+ a{
+	text-decoration:none
+}
+ a:hover {
+	text-decoration: underline;
+}
+ h1{
+	line-height: 24px;
+	font-weight: bold;
+	background-color: #AABAED;
+	border: 1px solid #000000;
+	color: #000000;
+	text-align: center;
+}
+ h2{
+	line-height: 15px;
+	font-size: 15px;
+	font-weight: normal;
+	background-color: #AAABCC;
+	border: 1px solid #000000;
+	color: #000000;
+	text-align: center;
+}
+ h3{
+	line-height: 12px;
+	font-size: 12px;
+	font-weight: normal;
+
+}
+ h5{
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #C1BAED;
+	border: 1px solid #000000;
+	color: #000000;
+	text-align: center;
+}
+
+
+
+
+.menu a,a:visited{
+	color: Yellow;
+	
+}
+.menu p{	
+	background-color: #111177;
+	border: 1px solid #000000;
+	font-size:medium;
+	color:#88ffff;
+	margin:0px;
+
+}
+
+
+.menu p:hover
+{
+	
+	border: 1px solid #ffffff;
+	background-color:#111133;
+	color:Yellow;
+}
+
+.level0
+{
+	margin:2%;
+}
+
+.menu td,tr
+{
+	background-color:#333377;
+	text-align:center;
+	
+}
+.footerMenu
+{
+	background-color:  #BBDBCC;
+	line-height:0px;
+}
+.footerMenu p{
+	
+	width:100%;
+	text-align:right;
+	font-size:smaller;
+
+}
+.footerMenu div
+{
+	text-align:right;
+
+}
+.footerMenu hr
+{/*
+	position:fixed; 
+	bottom:0;
+	right:0;*/
+}
+.footerMenu a{
+	color: #000000;
+	font-size:smaller;
+}
+.footerMenu a:visited {
+	color: #000000;
+	font-size:smaller;
+ }
+
+.footerMenu table
+{
+	
+	width:20%;
+	text-align:right;
+}
+.footerMenu td,tr
+{
+	text-align:left;
+	background-color:  #BBDBCC;
+}
+.grindView
+{	
+
+
+}
+.grindView form
+{
+    background-image:none;
+	
+    margin-left:0;
+	margin-right:0;
+}
+.grindView table
+{
+	
+	width:100%;
+	margin-right: 152px;
+	
+}
+.grindView table.fullWidth
+{
+	
+	width:100%;
+	table-layout:fixed;
+
+	
+}
+
+.grindView tr
+{
+	background-color:#BBDBEE;
+}
+.grindView tr:hover
+{
+	background-color: #DDDDDD;
+}
+.grindView tr.alt1
+{
+
+	background-color:#CBEBFE;
+	
+}
+.grindView tr.alt1:hover
+{
+
+	background-color:#EEEEEE;
+	
+}
+
+
+.grindView td
+{
+	background-color:inherit;
+/*	padding-left:20px;*/
+
+}
+.grindView td.alt2
+{
+	background-color:#BBDBEE;
+/*	padding-left:20px;*/
+}
+.grindView td.alt2:hover
+{
+
+	background-color:#BBDBEE;
+	
+}
+.grindView a
+{
+		text-align:left;
+		color:Black;
+}
+.grindView a:hover
+{
+		background-color:  #AAAAAA;
+}
+
